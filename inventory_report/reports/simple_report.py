@@ -1,2 +1,2 @@
 class SimpleReport:
-    pass
+    
