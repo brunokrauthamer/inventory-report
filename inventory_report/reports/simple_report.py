@@ -27,9 +27,7 @@ class SimpleReport:
             if count > number_of_products:
                 number_of_products = count
                 more_products_company = company
-        
+
         return f"""Data de fabricação mais antiga: {oldest_fabrication_date}
 Data de validade mais próxima: {closest_expiration_date}
 Empresa com mais produtos: {more_products_company}"""
-
-
