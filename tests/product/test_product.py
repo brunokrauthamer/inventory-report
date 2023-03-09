@@ -9,13 +9,15 @@ def test_cria_produto():
     data_de_validade = 'data_de_validade'
     numero_de_serie = 1
     instrucoes_de_armazenamento = 'instrucoes_de_armazenamento'
-    product = Product(id,
-    nome_do_produto,
-    nome_da_empresa,
-    data_de_fabricacao,
-    data_de_validade,
-    numero_de_serie,
-    instrucoes_de_armazenamento)
+    product = Product(
+        id,
+        nome_do_produto,
+        nome_da_empresa,
+        data_de_fabricacao,
+        data_de_validade,
+        numero_de_serie,
+        instrucoes_de_armazenamento
+    )
     print(product)
     assert product.id == 1
     assert product.nome_do_produto == nome_do_produto

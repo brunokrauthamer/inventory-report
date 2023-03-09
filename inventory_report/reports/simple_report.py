@@ -1,5 +1,6 @@
 from datetime import datetime
 
+
 class SimpleReport:
     @classmethod
     def generate(cls, list):
@@ -13,7 +14,6 @@ class SimpleReport:
             if item['data_de_validade'] >= current_date:
                 expiration_dates.append(item['data_de_validade'])
 
-
         fabrication_dates.sort()
         expiration_dates.sort()
 
@@ -21,8 +21,6 @@ class SimpleReport:
         closest_expiration_date = expiration_dates[0]
         more_products_company = ''
         number_of_products = 0
-
-        print(f'')
 
         for company in companies:
             count = companies.count(company)
